@@ -57,7 +57,7 @@
   users.users.px = {
     isNormalUser = true;
     description = "PX";
-	initialPassword = "321"
+    initialPassword = "321";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
@@ -140,6 +140,7 @@
 
   hardware.nvidia.prime = {
     sync.enable = true;
+  };
 
   #   # Bus ID of the NVIDIA GPU. You can find it using lspci, either under 3D or VGA
   #   nvidiaBusId = "PCI:1:0:0";
